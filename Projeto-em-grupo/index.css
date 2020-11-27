@@ -1,4 +1,3 @@
-/* Margens*/
 *{
     height: 0px auto;
     width: 0px auto;
@@ -42,10 +41,7 @@
     list-style: none;
 }
 
-.menu ol li{
-    display: flex;
-    flex-direction: row;
-    
+ 
 }
 .menu a{
     margin-top: 25px;
@@ -62,32 +58,6 @@
     color: rgb(71, 71, 71);
 }
 
-
-
-/* Section 01 */
-.section-01{
-    color: #393e46;
-    grid-row: 2/4;
-    grid-column: 1/4;
-    align-content: center;
-    justify-content: space-around;
-    width: 50vw;
-    height: auto;
-
-}
-
-.section-02{
-    color: #393e46;
-    grid-row: 2/4;
-    grid-column: 1/4;
-    align-content: center;
-    justify-content: space-around;
-    width: 50vw;
-    height: auto;
-
-}
-
-.texto-destaque p{
     margin-top: 25px;
     padding: 15px;
     margin-top: 150px;
@@ -102,7 +72,7 @@
     margin-top: px;
 }
 /* Botão para biografia */
-.botao {
+
     font-family: arial;
     font-size:14px;
     text-transform: uppercase;
@@ -131,7 +101,7 @@
     position:relative;
     top: 5px;
     box-shadow:none;
-}
+} */
 /* Icones de Redes sociais */
 .redes-sociais ul{
     float: right;
@@ -174,4 +144,9 @@ footer{
 
 #icon3 img{
     width: 36px;
+}
+
+.centralimg{
+    display: flex;
+    justify-content: center;
 }
