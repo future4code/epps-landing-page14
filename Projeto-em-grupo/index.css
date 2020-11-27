@@ -1,4 +1,8 @@
-/* zerando margens */
+body{
+    background-color: #3b4f66;
+    
+}
+
 *{
     height: 0px auto;
     width: 0px auto;
@@ -19,7 +23,9 @@
 }
 
 .menu ul li{
-    float: right;
+    display: inline-flex;
+    text-align: center;
+    
 }
 .menu a{
     margin-top: 25px;
@@ -38,11 +44,11 @@
 /* Logo */
 #logo-port{
     width: 300px;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 30px;
 }
 /* Texto inicial */
-.texto-destaque p{
+   .texto-destaque p{
     margin-top: 25px;
     padding: 15px;
     margin-top: 150px;
@@ -57,7 +63,7 @@
     margin-top: px;
 }
 /* Botão para biografia */
-.botao{
+/* .botao{
     font-family: arial;
     font-size:14px;
     text-transform: uppercase;
@@ -86,7 +92,7 @@
     position:relative;
     top: 5px;
     box-shadow:none;
-}
+} */
 /* Icones de Redes sociais */
 .redes-sociais ul{
     margin-top: 110px;
@@ -133,4 +139,9 @@ footer .barra-cinza-escuro{
 
 #icon3 img{
     width: 36px;
+}
+
+.centralimg{
+    display: flex;
+    justify-content: center;
 }
