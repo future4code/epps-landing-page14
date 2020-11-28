@@ -1,11 +1,13 @@
-
+*{
+    margin: 0;
+    padding:0;
+}
 body {
     display: grid;
     box-sizing: border-box;
     max-width: 100vw;
     height: 100vh;
-    margin: 10px;
-    padding: 0px;
+    padding: 0.1%;
 }
 
 #main-container {
@@ -13,8 +15,7 @@ body {
     align-content: center;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2%;
-    width: 100vw;
+    width: 99,9vw;
     height: auto;
 }
 
@@ -24,6 +25,7 @@ body {
     grid-column: 1/ 7;
     width: 100%;
     height: auto;
+    justify-items: center;
 }
 
 .menu {
@@ -36,35 +38,11 @@ body {
     text-transform: uppercase;
     font-size: 15px;
 }
-
-/* Logo */
-#logo {
-    width: 10%;
-    height: auto;
-
-}
-
-.menu ol{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    width: 100%;
-    height: auto;
-}
-
-.menu ol li{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-grow: 1;
-    width: 100%;
-    height: auto;
-}
 .menu a{
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: stretch;
+    justify-content: center;
     text-decoration: none;
     background-color:wheat;
     color: #6d6d6d;
@@ -79,14 +57,16 @@ body {
 .blue-block {
     background-color: blue;
     display: grid;
-    grid-column: 1/ 7;             
+    grid-column: 1/ 7;
+    max-width: 100%;             
 }
 
 .black-block {
     background-color: black;
     color: white;
     display: grid;
-    grid-row: 4/ 6;     
+    grid-row: 4/ 6;
+    max-width: 100%;     
 }
 
 #black7 {
@@ -94,40 +74,44 @@ body {
 }
 
 
-.white-block {
-    background-color: white;
-    display: grid;
-    grid-row: 7/ 8;
-      
+.footer {
+    background-color: #e0e0e0;
+    grid-row: 7/ 9;
+    grid-column: 1/ 7;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    max-width: 100%;
+    height: auto; 
+}
+.footer a:hover{
+    background-color: rgb(22, 54, 121);
+    color: rgb(255, 255, 255);
+}
+.footer img {
+    max-width: 20%;
+    height: auto;
 }
 
-#white11 {
-    grid-column: 1/ 7;
-}
-/* Icones de Redes sociais */
-.redes-sociais ul{
-    float: right;
+.footer a {
     text-align: center;
 }
-.redes-sociais ul li a {
-    line-height: 5px;
-}
-.redes-sociais ul li {
-display: inline-block;
-margin-right: 10px;
-}
-/* Lista icones para redes sociais */
-#icon1 img{
-    width: 35px;
+
+.footer-01 {
+    background-color: #e0e0e0;
+    font-style: italic;
+    grid-row: 8/ 9;
+    grid-column: 1/ 7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto; 
 }
 
-#icon2 img{
-    width: 38px;
-}
-
-#icon3 img{
-    width: 36px;
-}
 
 /* Tentativa de Responsividade */
 @media screen and (min-device-width : 50px) and (max-device-width : 420px) {
