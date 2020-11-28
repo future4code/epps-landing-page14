@@ -102,6 +102,18 @@ body {
     grid-column: 1/ 7;
 }
 
+.text-fist{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50vh;
+    
+}
+
+.text-fist img{
+    width: 50%;
+}
+
 .footer {
     background-color: #e0e0e0;
     grid-row: 7/ 9;
