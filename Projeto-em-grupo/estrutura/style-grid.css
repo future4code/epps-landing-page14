@@ -1,0 +1,271 @@
+
+body {
+    display: grid;
+    box-sizing: border-box;
+    max-width: 100vw;
+    height: 100vh;
+    margin: 10px;
+    padding: 0px;
+    background-color: #3b4f66;
+}
+
+#main-container {
+    display: grid;
+    align-content: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    width: 100vw;
+    height: auto;
+}
+
+#header {
+    display: grid;
+    grid-row: 1;
+    grid-column: 1/ 7;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    background-color: #3b4f66;
+    justify-items: center;
+    
+
+}
+
+.menu {
+    display: flex;
+    background-color:#115396;
+    flex-direction: row;
+    width: 100%;   
+    height: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-sizing: border-box;
+    text-align: center;    
+}
+
+/* Logo */
+#logo {
+    width: 10%;
+    height: auto;
+
+}
+
+
+.menu a{
+    display: flex;
+    width: 20%;
+    height: 100%;      
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    justify-content: center;    
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    
+}
+
+
+.menu a:hover{
+    background-color: rgb(13, 150, 168);
+    color: rgb(255, 250, 249);
+    border-radius: 3px;
+}
+
+.blue-block {
+    background-color:#c1c9d1;
+    display: grid;
+    grid-column: 1/ 7;
+    
+
+}
+
+.blue-block2{
+    background-color:#c1c9d1;
+    display: grid;
+    grid-column: 1/ 7;
+}
+
+.blue-block img{
+    display: flex;
+    justify-self: center;
+}
+
+.blue-block2 img{
+    border-radius: 100%;
+    width: 300px;
+    display: flex;
+    
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-row: 4/ 6;     
+}
+
+#black7 {
+    grid-column: 1/ 7;
+}
+
+
+.white-block {
+    background-color: white;
+    display: grid;
+    grid-row: 7/ 8;
+      
+}
+
+#white11 {
+    grid-column: 1/ 7;
+}
+/* Icones de Redes sociais */
+.redes-sociais ul{
+    float: right;
+    text-align: center;
+}
+.redes-sociais ul li a {
+    line-height: 5px;
+}
+.redes-sociais ul li {
+display: inline-block;
+margin-right: 10px;
+}
+/* Lista icones para redes sociais */
+#icon1 img{
+    width: 35px;
+}
+
+#icon2 img{
+    width: 38px;
+}
+
+#icon3 img{
+    width: 36px;
+}
+
+/* Tentativa de Responsividade */
+@media screen and (min-device-width : 50px) and (max-device-width : 420px) {
+    /* celulares */
+    #main-container {
+        display: grid;
+        align-content: center;
+        text-align: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 2%;
+        max-width: 100vw;
+        max-height: auto;
+    }
+    
+    #header {
+        background-color: red;
+        display: grid;
+        grid-row: 1;
+        grid-column: 1;
+        width: 100%;
+        height: auto;
+    }
+    
+    .blue-block {
+        background-color: blue;
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        width: 100vw;             
+    }
+
+    #blue1{
+        grid-row: 2;
+    }
+
+    #blue4{
+        grid-row: 5;
+    }
+   
+    #black7 {
+        grid-column: 1;
+        grid-row: 8;
+    }
+    
+    .white-block {
+        background-color: white;
+        display: grid;                
+    }
+    
+     #white11 {
+        grid-column: 1;
+        grid-row: 12;
+    }
+}   
+
+
+    @media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+    /* tablets */
+    #main-container {
+        display: grid;
+        text-align: center;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+        gap: 2%;
+        width: 100vw;
+        max-height: 100vh;
+    }
+    
+    #header {
+        background-color:wheat;
+        display: grid;
+        grid-row: 1;
+        grid-column: 1/ 2;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .blue-block {
+        background-color: blue;
+        display: grid;
+        width: 100vw;
+        height: auto;             
+    }
+
+    #blue1{
+        grid-row: 2;
+        width: 50vw;
+        
+    }
+
+    #blue4{
+        grid-row: 4;
+        width: 50vw;
+        grid-column: 1;
+        justify-self: start;
+    }
+    
+  
+    #black7 {
+        grid-column: 1;
+        grid-row: 6/8;
+        width: 50vw;
+    }
+    
+      
+    .white-block {
+        background-color: white;
+        display: grid;
+                
+    }
+    
+     
+    #white11 {
+        grid-column: 1;
+        grid-row: 9;
+    }
+
+
+}
+  
