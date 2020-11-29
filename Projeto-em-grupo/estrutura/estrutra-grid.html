@@ -10,18 +10,35 @@
 </head>
 
 <body>
-    <div id="main-container">
-        
+    <main id="main-container">
         <header id="header">
-            <nav class="menu" >                
-                <a href="#">Quem Somos</a>
-                <a href=".">Biografia</a>
-                <a href="">Contatos</a> 
-                <a href="">Meus Projetos</a>        
-                <a href="" class="botao botao-bio">Leia mais...</a>
+            <nav class="menu" >  
+                <a href="#section1">Quem Somos</a>
+                <a href="#section2">Serviços</a>
+                <a href="#section3">Projetos</a> 
+                <a href="#section4">Fale Conosco</a>        
+                <a href="#section5">Conecte-se</a>
             </nav>        
         </header>
+                
+        <section class="section-1" id="section1">
+            <img src="imgproject/2.png" alt="">
+        </section>
+
+        <section class="section-2" id="section2">
+            <img src="imgproject/dhouse.jpg" alt="">
+        </section>
+
+        <section class="section-3" id="section3">
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ratione, deleniti adipisci, 
+         beatae commodi similique, distinctio voluptate magni sunt excepturi non quaerat saepe architecto cumque. 
+         Iure voluptate quos in consequuntur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+         Fugiat ratione, deleniti adipisci, beatae commodi similique, distinctio voluptate magni sunt excepturi 
+         non quaerat saepe architecto cumque. 
+         Iure voluptate quos in consequuntur.</p>
+        </section>
         
+
         <div class="blue-block" id="blue1"><img src="imgproject/2.png" alt=""></div>
         <section class="about">    
                 <h1> Cansado de sofrer com seguros que não funcionam?</h1>
@@ -46,17 +63,42 @@
             <div class="black-block" id="black7">7</div>
             
         <footer class="footer">
+          
+        <section class="section-4" id="section4">
+            <form action="/pagina-processa-dados-do-form" method="post">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" autofocus />
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" />
+                </div>
+                <div>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Enviar sua mensagem</button>
+                </div>
+            </form>
+        </section>     
+                      
+        <footer class="footer" id="section5">
+
                 <a href="https://www.gmail.com" target="_blank"><img src="../ícones/email.png" alt="Ícone E-mail"/></a>
                 <a href="https://www.linkedin.com" target="_blank"><img src="../ícones/live-chat.png" alt="Ícone Linkedin"/></a>
                 <a href="https://www.facebook.com" target="_blank"><img src="../ícones/globe.png" alt="Ícone Facebook"></a>
                 <a href="https://www.instagram.com" target="_blank"><img src="../ícones/corded-phone.png" alt="Ícone Instagram"/></a>
                 <a href="https://www.instagram.com" target="_blank"><img src="../ícones/mailbox.png" alt="Ícone WhatsApp"/></a> 
-        </footer>
 
-        <footer class="footer-01">Direitos reservados aos amigos do Chuck Norris - José Modolo, Pedro Borba e Will Ferreira</footer>
+            <div class="footer-01">Direitos reservados aos amigos do Chuck Norris - José Modolo, Pedro Borba e Will Ferreira</footer>
+            </footer>
+
+        
 
             
-    </div>
+    </main>
 </body>
 
 </html>
