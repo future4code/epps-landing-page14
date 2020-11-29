@@ -15,12 +15,12 @@ body {
 }
 
 #main-container {
-    display: grid;
+    /* display: grid;
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 99,9vw;
     height: auto;
-    background-color:white;
+    background-color:white; */
     background: linear-gradient(to bottom, #8db596,  #92817a, #707070);
 }
     .sticky + .main-container {
@@ -78,6 +78,21 @@ header a{
     background-color: rgb(122, 77, 18);
     color:#707070;
     border-radius: 3px;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+
+}
+
+#check{
+    display: none;
 }
 
 .section-1 {
@@ -145,7 +160,7 @@ header a{
 form {
     /* Centraliza o form na página */
     margin: 0 auto;
-    width: 400px;  
+    /* width: 400px;   */
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
@@ -168,7 +183,8 @@ form {
   input, textarea {
     /* Configurações de fonte e tamanho de texto*/
     font: 1em sans-serif;
-    width: 300px;
+    width: 70%;
+    min-width: 250px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   
@@ -183,7 +199,7 @@ form {
     background-size: cover;
     background-attachment: fixed;
     color: #b9b8b8;
-    width: 600%;
+    /* width: 600%; */
     align-items: center;
     font-family: sans-serif;
 }
@@ -205,14 +221,14 @@ form {
 }
 
 .footer {
-    grid-column: 1/ 7;
+    /* grid-column: 1/ 7;
     display: grid;
     grid-template-columns: 20% 20%;
     align-items: flex-end;
     align-content: center;
     max-width: 100%;
     margin-top: 5%;
-    margin-bottom: 0;
+    margin-bottom: 0; */
     padding: 5%; 
 }
 
@@ -246,10 +262,69 @@ form {
 /* Tentativa de Responsividade */
 @media screen and (min-device-width : 50px) and (max-device-width : 420px) {
     /* celulares */
+
+    .checkbtn{
+        display: block;
+        position: fixed;
+      
+    }
+
+    #header {
+        display: none;
+    }
+
+    #check:checked ~ #header {
+      display: flex;
+      top: 64px;
+      border: none;
+      width: auto;
+    }
+
+
+    /* .menu{
+        display: none;
+    } */
+
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        width: auto;
+
+    }
 }
+
     
 
     @media screen and (min-device-width : 421px) and (max-device-width : 800px) {
     /* tablets */
+
+    .checkbtn{
+        display: block;
+        position: fixed;
+      
+    }
+
+    #header {
+        display: none;
+    }
+
+    #check:checked ~ #header {
+      display: flex;
+      top: 64px;
+      border: none;
+      width: auto;
+    }
+
+
+    /* .menu{
+        display: none;
+    } */
+
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        width: auto;
+
+    }
 }
   
