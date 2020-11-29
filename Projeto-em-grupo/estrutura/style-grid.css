@@ -117,15 +117,14 @@ header a{
 }
 
 .section-2{
-    display: grid;
+    display: grid;  
     grid-column: 1/ 7;
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 5%;
 }
 
-.section-2 img{
-    border-radius: 100%;
+.section-2 video{
     width: 35%;
     display: flex;
     margin-top: 2%;
