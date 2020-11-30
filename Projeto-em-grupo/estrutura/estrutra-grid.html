@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="style-grid.css" type="text/css" rel="stylesheet">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link  rel = "shortcut icon"  href = "../ícones/favicon.ico"  type = "image / x-icon" >
+    <title>4 Safe - Seguros</title>
+
+<!--   <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
 </head>
 
 <body>
@@ -19,38 +21,57 @@
         <header id="header">
             <nav class="menu">            
                 <a href="#section1">Quem Somos</a>
-                <a href="#section2">Serviços</a>
-                <a href="#section3">Projetos</a> 
+                <a href="#section3">Serviços</a>
+                <a href="#section2">Apresentação</a> 
                 <a href="#section4">Fale Conosco</a>        
                 <a href="#section5">Conecte-se</a>
             </nav>        
-        </header>
-                
+        </header>       
         <section class="section-1" id="section1">
-            <img src="imgproject/2.png" alt="">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ratione, deleniti adipisci, 
-                beatae commodi similique, distinctio voluptate magni sunt excepturi non quaerat saepe architecto cumque. 
-                Iure voluptate quos in consequuntur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Fugiat ratione, deleniti adipisci, beatae commodi similique, distinctio voluptate magni sunt excepturi 
-                non quaerat saepe architecto cumque. 
-                Iure voluptate quos in consequuntur.</p>
+                <img src="imgproject/2.png" alt="">
+                <div class="text-fist">
+                    <h1>Cansado de sofrer com seguros que não funcionam?</h1>
+                    <p>A Safe é uma empresa que foi desenvolvida para  ser diferenciada no 
+                        mercado garantindo a segura de Chuck Noris e amigos.Temos a revolucionária 
+                        tecnologia BOOM. Sua casa, seu carro ou sua vida, nunca mais seram um problema, 
+                        pois caso sua casa for invadida ou seu carro roubado, ela tranca todas as saída e aciona 
+                        o detonador de 5 segundo, e todos os ladroes fazem BOOM!!!É uma maravilha de tecnologia, 
+                        deixando a cada cliente com um ar de satisfação e alegria, 100% livre de invasores 
+                        (literalmente)!
+                    </p>
+                </div>
         </section>
-
-        <section class="section-2" id="section2">
-            <video src="imgproject/dhouse.jpg" alt="video" autoplay controls>
-        </section>
-
+        <div class="our-services">
+            <H1>Nossos Serviços</H1>
+        </div>
         <section class="section-3" id="section3">
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ratione, deleniti adipisci, 
-         beatae commodi similique, distinctio voluptate magni sunt excepturi non quaerat saepe architecto cumque. 
-         Iure voluptate quos in consequuntur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-         Fugiat ratione, deleniti adipisci, beatae commodi similique, distinctio voluptate magni sunt excepturi 
-         non quaerat saepe architecto cumque. 
-         Iure voluptate quos in consequuntur.</p>
+            <div class="services">
+                <img src="./imgproject/roubo-de-carro.png" alt="">
+                <h3>Seu Carro Foi Roubado?</h3>
+                <p> Roubo ou assalto recomendamos acione a 4Safe, e que sáida do veículo o mais rápido possivel pois, assim que acionado a 4Safe o veículo se alto destruirá (prejuízos seram pago conforme contrato)</p>
+            </div>
+            <div class="services">
+                <img src="./imgproject/roubo-de-casa.png" alt="">
+                <h3>Sua Casa Foi Roubada?</h3>
+                <p>Roubo ou assalto recomendamos acione a 4Safe, e que sáida do local o mais rápido possivel pois, assim que acionado a 4Safe o local se alto destruirá (prejuízos seram pago conforme contrato)</p>
+            </div>
+            <div class="services">
+                <img src="./imgproject/roubo-de-pessoas.png" alt="">
+                <h3>Você Foi Roubado(a)?</h3>
+                <p> Nesse caso, recomendamos que acione a 4Safe, e busque refugio em algum lugar coberto, estamos com uma artilharia de sniper espalhados pelo país, esperando o momento para destruir o inimigo.</p>
+            </div>
+            <section class="section-2" id="section2">
+            <div>
+                <H1>Apresentação Tecnologia BOOM</H1>
+            </div>
+            <br>
+                <video src="./video-cliente.mp4" alt="video" controls>
+            </section>
         </section>
         
         <section class="section-4" id="section4">
             <form action="/pagina-processa-dados-do-form" method="post">
+                <H1>Fale Conosco</H1>
                 <div>
                     <label for="name">Nome:</label>
                     <input type="text" id="name" autofocus />
@@ -64,7 +85,7 @@
                     <textarea id="msg"></textarea>
                 </div>
                 <div class="button">
-                    <button type="submit">Enviar sua mensagem</button>
+                    <button class="btn btn-red" type="submit">Enviar sua mensagem</button>
                 </div>
             </form>
         </section>     
