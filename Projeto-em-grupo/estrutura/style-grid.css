@@ -22,24 +22,21 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 99,9vw;
     height: auto;
+    color: white;
     background-color:white;
-    background: linear-gradient(to bottom, #697dbe,  #3d4f8a, #212b4b);
+    background: linear-gradient(to bottom, #217e6a,  #274261, #16221e);
 }
-.sticky + .main-container {
-    padding-top: 102px;
-} 
 
 #header {
-    display: grid;
-    boder: 1px solid black;
-    grid-row: 1;
+    display: flex;
+    border: 1px solid rgb(18, 19, 18);
     grid-column: 1/ 7;
     width: 100%;
-    height: 10%;
+    height: auto;
     position: fixed;
     top: 0px;
     justify-items: center;
-    marin-top: 1%;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 
@@ -54,7 +51,7 @@ header a{
     height: auto;
     font-family: sans-serif;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 10px;
     box-sizing: border-box;
     text-align: center;    
 }
@@ -67,11 +64,10 @@ header a{
     text-decoration: none;
     color: rgb(18 18, 18);
     justify-content: center;    
-    border-rdius: 10px;
+    border-radius: 10px;
     font-size: 20px;
-    background-color: #312f2f;
     font-family: sans-serif;
-    color:rgb(214, 214, 214);
+    color: rgb(18, 19, 18);
  
 }
 
@@ -84,12 +80,11 @@ header a{
 
 .checkbtn{
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(18, 19, 18);
     float: right;
     line-height: 80px;
     margin-right: 40px;
     display: none;
-
 }
 
 #check{
@@ -103,26 +98,23 @@ header a{
 }
 
 .section-1 {
-    display: flex;
-    justify-content: center;
     grid-column: 1/ 7;
-    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
     align-items: center;
+    max-width: 100%;
     margin-top: 7%;
     margin-bottom: 5%;
     padding: 5%;
 }
-.text-fist{
-    width: 45%;
-    text-align: center;
-}
-.text-fist h1{
-    padding-bottom: 5% ;
+
+.section-1 h2{
+    padding-bottom: 5%;
 }
 .section-1 img{
     display: flex;
-    justify-self: center;
-    flex-direction: column;
+    align-content: center;
     width: 35%;
     height: auto;
     margin-top: 1%;
@@ -131,23 +123,43 @@ header a{
 }
 
 .section-2{
-    display: grid;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-content: center;
+    text-align: center;  
     grid-column: 1/ 7;
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 5%;          
 }
 
-.section-2 video{
-    width: 80%;
+.section-2 h2 {
     display: flex;
-    margin-top: 2%;
+    align-self: center;
+
+}
+
+.section-2 img{
+    align-self: center;
+    width: 10%;
+    height: 10%;
+    
+}
+.section-2 video{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 5%;
     margin-bottom: 2%; 
-    margin-left: 9.8%
+    margin-left: 9.8%;
+    border-radius: 10%;
 }
 
 .section-3{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     justify-items: center;
     grid-column: 1/ 7;
     margin-bottom: 20%;
@@ -155,22 +167,45 @@ header a{
 }
 
 .section-3 p {
-    width: 80%;
+    width: 20%;
     display: flex;
     text-align-last: center;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 1%;
 }
 
-.services p{
-    margin-left: 9%;        
-}
-
-.services img{
-    width: 90%;
+.section-3 img{
+    width: 25%;
     margin-top: 15%;
     margin-bottom: 10%;
+    border-radius: 10%;
 }
+
+div.gallery {
+    display:grid;
+    gap: 3%;
+    margin: auto;
+    border-radius: 5%;
+    justify-content: center;   
+    width: 20%;
+    margin-top: 5%;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    display: grid;
+    padding:5%;
+    text-align: center;
+  }
+
 
 /* Formulário */
 
@@ -187,8 +222,9 @@ header a{
 
 form {
     /* Centraliza o form na página */
+    display: grid;
     margin: 0 auto;
-    /* width: 400px;   */
+    width: 35%;
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
@@ -204,15 +240,16 @@ form {
   label {
     /* Alinhamento - label */
     display: inline-block;
-    width: 90px;
+    justify-content: left;
+    align-items: flex-start;
+    width: 30%;
     text-align: right;
   }
   
   input, textarea {
     /* Configurações de fonte e tamanho de texto*/
     font: 1em sans-serif;
-    width: 70%;
-    min-width: 250px;
+    width: 60%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   
@@ -280,15 +317,17 @@ form {
 }
 
 .footer {
-    /* grid-column: 1/ 7;
-    display: grid;
-    grid-template-columns: 20% 20%;
-    align-items: flex-end;
+    font-style: italic;
+    grid-row: 8/ 9;
+    grid-column: 1/ 7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-content: center;
-    max-width: 100%;
-    margin-top: 5%;
-    margin-bottom: 0; */
-    padding: 5%; 
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
 }
 
 .footer a:hover{
@@ -306,6 +345,7 @@ form {
 
 .footer-01 {
     font-style: italic;
+    grid-row: 8/ 9;
     grid-column: 1/ 7;
     display: flex;
     flex-direction: row;
@@ -313,12 +353,13 @@ form {
     align-content: center;
     align-items: center;
     max-width: 100%;
-    height: auto;
-    margin-top: 5%;
+    height: auto; 
+    margin-top: 10%;
+    margin-bottom: 2%;
  
 }
 
-/* Tentativa de Responsividade */
+/*Responsividade */
 @media screen and (min-device-width : 50px) and (max-device-width : 420px) {
     /* celulares */
 
